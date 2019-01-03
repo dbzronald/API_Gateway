@@ -61,9 +61,9 @@ public class ClienteController {
                 HttpMethod.POST,
                 request, Cliente.class);
 
-        restTemplate.exchange("http://localhost:8088/correo/nuevoCliente",
-                HttpMethod.GET, request,
-                Cliente.class);
+       // restTemplate.exchange("http://localhost:8088/correo/nuevoCliente",
+         //       HttpMethod.GET, request,
+          //      Cliente.class);
 
         return new ResponseEntity<>(exchange.getBody(), exchange.getStatusCode());
     }
